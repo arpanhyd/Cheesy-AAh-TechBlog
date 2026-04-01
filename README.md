@@ -2,7 +2,7 @@
 
 so basically I made this to troll my friends. 
 
-it looks exactly like a totally boring, normal "tech bro" web3 hustle blog (called "10x Dev" now instead of whatever generic name I had before). but if anyone tries to click literally *anything* on the page—an article link, a button, even the navbar—the click gets hijacked.
+it looks exactly like a totally boring, normal "tech bro" web3 hustle blog (called "10x Dev" ). but if anyone tries to click literally *anything* on the page—an article link, a button, even the navbar—the click gets hijacked.
 
 instead of loading an article, it blasts the loudest, most obnoxious US internet memes (vine boom, taco bell bong, among us sus, etc.) and these massive emojis of a chicken leg, a burger, and a skull pop up out of nowhere and glitch across the screen. 
 
@@ -18,4 +18,4 @@ have fun ruining some eardrums!
 ### support & contributions
 if you somehow want to make this trap even more annoying, feel free to fork the repo and hit me with a pull request!
 
-for bugs, hatemail, or support for the **10x Dev Blog**, you can reach me at: `support@10xdev.hub` (replace with ur actual email if u want the complaints directly).
+for bugs, hatemail, or support for the **10x Dev Blog**, you can reach me at: 'arpanhyd@gmail.com` and share me some feedback so i can improve myself and the website!
