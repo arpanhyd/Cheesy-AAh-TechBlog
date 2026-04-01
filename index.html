@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 10x Dev | AI, Web3 & Grindset</title>
+    <style>
+        /* FAKE PROFESSIONAL TECH BLOG STYLES */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+
+        .logo span { color: #4299e1; }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        
+        nav a:hover { color: #4299e1; }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 24px;
+            margin-bottom: 30px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            color: #2b6cb0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ebf8ff;
+            color: #2b6cb0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        h2 { margin-top: 0; font-size: 1.8rem; }
+        .sidebar h3 { border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        
+        button.read-more {
+            background-color: #2b6cb0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        /* -------------------------------- */
+        /* THE TROLL ELEMENTS (HIDDEN INITIALLY) */
+        /* -------------------------------- */
+        
+        .jumpscare {
+            position: fixed;
+            font-size: 10rem; /* Massive emojis */
+            z-index: 9999;
+            pointer-events: none;
+            opacity: 0;
+            transform: scale(0);
+            filter: drop-shadow(0 0 50px rgba(255, 0, 0, 0.8));
+        }
+
+        /* Random animations for the jump scares */
+        @keyframes popUp {
+            0% { opacity: 0; transform: scale(0) translateY(200px); }
+            10%, 90% { opacity: 1; transform: scale(1.5) translateY(0) rotate(5deg); }
+            15%, 85% { transform: scale(1.5) translateY(0) rotate(-5deg); }
+            100% { opacity: 0; transform: scale(3) translateY(-200px); filter: blur(20px); }
+        }
+
+        @keyframes glitchFlash {
+            0%, 100% { opacity: 0; transform: scale(0) skew(0deg); }
+            10%, 90% { opacity: 1; transform: scale(2) skew(10deg); filter: hue-rotate(90deg); }
+            20%, 80% { transform: scale(2.2) skew(-10deg); filter: hue-rotate(-90deg); }
+        }
+        
+        @keyframes floatIn {
+            0% { opacity: 0; transform: scale(0) rotate(-45deg); left: -20%; }
+            50% { opacity: 1; transform: scale(3) rotate(0deg); left: 40%; }
+            100% { opacity: 0; transform: scale(0) rotate(45deg); left: 120%; }
+        }
+
+        /* Page wide glitch effect applied dynamically to body */
+        @keyframes pageGlitch {
+            0% { filter: invert(0) hue-rotate(0deg); transform: translate(0, 0); }
+            25% { filter: invert(1) hue-rotate(90deg); transform: translate(10px, -5px); }
+            50% { filter: invert(0) hue-rotate(180deg); transform: translate(-10px, 5px); }
+            75% { filter: invert(1) hue-rotate(270deg); transform: translate(5px, 10px); }
+            100% { filter: invert(0) hue-rotate(360deg); transform: translate(0, 0); }
+        }
+
+        .glitching-body {
+            animation: pageGlitch 0.2s infinite;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- FAKE NAVBAR -->
+    <header>
+        <div class="container nav-flex">
+            <h1 class="logo">10x<span>Dev</span></h1>
+            <nav>
+                <a href="#ai">AI Trends</a>
+                <a href="#mobile">Smartphones</a>
+                <a href="#crypto">Crypto Markets</a>
+                <a href="#hardware">Hardware</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FAKE BLOG CONTENT -->
+    <div class="container main-grid">
+        <main>
+            <div class="card">
+                <span class="badge">BREAKING NEWS</span>
+                <h2>6G Networks Are Here: What You Need to Know</h2>
+                <p>The dawn of the next wireless generation is upon us. Telecommunication giants have just activated the world's first permanent 6G microwave antennas, promising speeds up to 100x faster than 5G. But what does this mean for average consumers?</p>
+                <p>Some experts warn that the transition may force older hardware into obsolescence overnight. Find out if your smartphone is compatible and what the new 'brain chip' integration protocols mean for your privacy.</p>
+                <button class="read-more">Read Full Analysis</button>
+            </div>
+
+            <div class="card">
+                <span class="badge">OPINION</span>
+                <h2>Why Quantum RAM is Actually a Complete Scam</h2>
+                <p>Startups have been raising billions on the promise of "Quantum RAM" – volatile memory modules that theoretically store data in superposition. However, our deep dive reveals that this might be the biggest tech grift of the decade.</p>
+                <button class="read-more">Read More</button>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="card">
+                <h3>Trending This Week</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                        <a href="#link1" style="color: #2b6cb0; text-decoration: none; font-weight: bold;">Is your AI Overlord listening to you sleep?</a>
+                    </li>
+                    <li style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                        <a href="#link2" style="color: #2b6cb0; text-decoration: none; font-weight: bold;">Top 10 ways to pay your rent in Dogecoin.</a>
+                    </li>
+                    <li style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                        <a href="#link3" style="color: #2b6cb0; text-decoration: none; font-weight: bold;">Why developers are abandoning Python for this new language.</a>
+                    </li>
+                </ul>
+                <button class="read-more" style="width: 100%; background-color: #e2e8f0; color: #333;">Subscribe to Newsletter</button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- TROLL ELEMENTS IN THE DOM -->
+    <div id="chicken" class="jumpscare">🍗</div>
+    <div id="burger" class="jumpscare">🍔</div>
+    <div id="skull" class="jumpscare">💀</div>
+
+    <script>
+        // --- US Memes Audio Setup ---
+        const soundData = [
+            { id: 'vine_boom', url: 'https://www.myinstants.com/media/sounds/vine-boom.mp3' },
+            { id: 'bruh', url: 'https://www.myinstants.com/media/sounds/movie_1.mp3' },
+            { id: 'fart', url: 'https://www.myinstants.com/media/sounds/fart-with-reverb.mp3' },
+            { id: 'taco', url: 'https://www.myinstants.com/media/sounds/taco-bell-bong-sfx.mp3' },
+            { id: 'amongus', url: 'https://www.myinstants.com/media/sounds/among-us-role-reveal-sound.mp3' },
+            { id: 'fahhh', url: 'https://www.myinstants.com/media/sounds/ive-got-this-faaaaaaaaahhhhh.mp3' },
+            { id: 'mommy', url: 'https://www.myinstants.com/media/sounds/my-mommy-said-no-more.mp3' },
+            { id: 'oof', url: 'https://www.myinstants.com/media/sounds/roblox-death-sound_1.mp3' },
+            { id: 'wow', url: 'https://www.myinstants.com/media/sounds/anime-wow-sound-effect.mp3' }
+        ];
+
+        // Preload audio objects
+        const players = soundData.map(item => new Audio(item.url));
+
+        // Get troll DOM elements
+        const trollElements = [
+            document.getElementById('chicken'),
+            document.getElementById('burger'),
+            document.getElementById('skull')
+        ];
+
+        const animTypes = ['popUp', 'glitchFlash', 'floatIn'];
+
+        // --- CLICK INTERCEPTOR LOCIC ---
+        // We use true (capture phase) to ensure we hijack the click before the browser navigates
+        document.addEventListener('click', function(e) {
+            
+            // Check if what they clicked looks even remotely actionable to make it frustrating 
+            if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('.card') || e.target.closest('li') || e.target.closest('h2')) {
+                // Intercept!
+                e.preventDefault();
+                e.stopPropagation();
+
+                triggerTrollEvent(e.clientX, e.clientY);
+            }
+        }, true);
+
+        // --- RANDOM TROLL POP-UPS ---
+        // User said: "pops up randomly anytime while viewing the website"
+        setInterval(() => {
+            // 20% chance every 3 seconds to just randomly jumpscare without clicking
+            if (Math.random() > 0.8) {
+                triggerTrollEvent(
+                    Math.random() * window.innerWidth, 
+                    Math.random() * window.innerHeight
+                );
+            }
+        }, 3000);
+
+        function triggerTrollEvent(clientX, clientY) {
+            // 1. Play random meme sound
+            const randomAudio = players[Math.floor(Math.random() * players.length)];
+            randomAudio.currentTime = 0;
+            randomAudio.play().catch(e => console.log('Audio load block', e));
+
+            // 2. Pick a random 2D element (Burger, Chicken, Skull)
+            const el = trollElements[Math.floor(Math.random() * trollElements.length)];
+            
+            // 3. Position it near the click or randomly
+            // Use viewport units to ensure it stays on screen
+            const x = Math.max(10, Math.min(clientX - 100, window.innerWidth - 200));
+            const y = Math.max(10, Math.min(clientY - 100, window.innerHeight - 200));
+            
+            el.style.left = `${x}px`;
+            el.style.top = `${y}px`;
+
+            // 4. Assign a random animation
+            const animName = animTypes[Math.floor(Math.random() * animTypes.length)];
+            const animDuration = 0.5 + Math.random(); // 0.5s to 1.5s
+            
+            // Reset animation state (in case it is already animating)
+            el.style.animation = 'none';
+            el.offsetHeight; /* trigger reflow */
+            el.style.animation = `${animName} ${animDuration}s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards`;
+
+            // 5. Briefly glitch out the entire page just for extra chaos
+            document.body.classList.add('glitching-body');
+            setTimeout(() => {
+                document.body.classList.remove('glitching-body');
+            }, 300); // Glitch only lasts 300ms
+        }
+
+    </script>
+</body>
+</html>
