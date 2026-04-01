@@ -1,4 +1,4 @@
-# 10x Dev Meme Trap lol 💀
+# 10x Dev Meme Trap lol (VibeCoded with Google Antigravity!)💀
 
 so basically I made this to troll my friends. 
 
