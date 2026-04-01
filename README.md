@@ -14,3 +14,8 @@ you don't even need to build anything. i just run it locally or upload `index.ht
 if u want to add more annoying sounds, just throw the direct myinstants `mp3` links into the `soundData` array inside `index.html`. the code handles the random selection and animations automatically.
 
 have fun ruining some eardrums!
+
+### support & contributions
+if you somehow want to make this trap even more annoying, feel free to fork the repo and hit me with a pull request!
+
+for bugs, hatemail, or support for the **10x Dev Blog**, you can reach me at: `support@10xdev.hub` (replace with ur actual email if u want the complaints directly).
